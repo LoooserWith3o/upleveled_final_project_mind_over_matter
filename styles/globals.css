@@ -2,8 +2,26 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-image: url(../public/img/proj_1.jpg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #252525;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background-color: greenyellow;
+  }
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 a {
@@ -13,4 +31,71 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 30px;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.navbar1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar3 {
+  padding: 5px;
+  margin: 5px;
+}
+.navbar3:hover {
+  background-color: black;
+  color: white;
+}
+.svg1 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .svg1 {
+    display: flex;
+  }
+  .navbar1 {
+    text-align: center;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    left: -100%;
+    top: 20%;
+  }
+  .navbar_change {
+    background-color: antiquewhite;
+    text-align: center;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+    top: 20%;
+  }
+  .navbar2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
